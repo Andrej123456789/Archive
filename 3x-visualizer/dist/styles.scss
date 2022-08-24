@@ -1,0 +1,25 @@
+:root {
+    --background-color: black;
+    --title-fg-color: yellowgreen;
+}
+
+@mixin theme {
+    background-color: var(--background-color);
+    color: var(--title-fg-color);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    
+    @include theme;
+}
